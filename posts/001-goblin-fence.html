@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Goblin Lab Notes 0001 — We tried to build a fence for AI goblins. The AI immediately found holes in it.">
+  <title>Goblin Lab Notes 0001 — RUNE DEV LOGS</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <header>
+    <div class="shell">
+      <div class="kicker">RUNE DEV LOGS // GOBLIN LAB NOTES</div>
+      <nav>
+        <a href="../index.html">[ ← HOME ]</a>
+        <a href="../index.html#goblin-lab">[ GOBLIN LAB ]</a>
+        <a href="../index.html#rune">[ RUNE ]</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="shell">
+    <article>
+      <div class="kicker">LOG 0001 // 2026-08-18</div>
+      <h1>We Tried to Build a Fence for AI Goblins. The AI Immediately Found Holes in It.</h1>
+      <p class="tagline">What an extremely capable coding agent taught us about evidence, authority, and why the future apparently still needs someone to check the receipts.</p>
+
+      <div class="meta">
+        <strong>SYSTEM:</strong> BLACKMAGICKAI<br>
+        <strong>EXPERIMENT:</strong> autonomous software engineering reliability<br>
+        <strong>STATUS:</strong> ongoing<br>
+        <strong>AGENT:</strong> Claude Code / Anthropic<br>
+        <strong>EDITORIAL NOTE:</strong> this is not a review, benchmark, or dunk. It is a development story.
+      </div>
+
+      <p>We are building a game-development research system that asks AI workers to do increasingly real work: generate things, modify things, test things, repair failures, and explain what happened afterward.</p>
+
+      <p>The problem is that an AI worker can be very good at building something and still be a surprisingly unreliable witness to what it just built.</p>
+
+      <blockquote>Apparently we have invented artificial intelligence. It still needs us to ask, “Okay, but did that actually happen?”</blockquote>
+
+      <h2>01 // The thing actually worked</h2>
+
+      <p>The story started with a small autonomous production experiment. We asked the agent to build a closed loop: make an artifact, measure it, deliberately encounter a real failure, repair the failure, measure again, and record the result.</p>
+
+      <p>It did.</p>
+
+      <p>The first specimen failed a measurable technical requirement. The system diagnosed the failure, changed a bounded parameter, regenerated the artifact, measured it again, and passed.</p>
+
+      <p>That was genuinely useful. The problem came one sentence later, when a successful laboratory proof started sounding suspiciously like proof of the whole production system.</p>
+
+      <div class="system-note"><strong>GOBLIN INCIDENT 001:</strong> A true result escaped its enclosure and began claiming territory it did not own.</div>
+
+      <p>Nothing had to be fabricated for the conclusion to become too strong. The underlying evidence could be real while the scope of the claim quietly expanded.</p>
+
+      <p>That distinction turned out to matter a lot.</p>
+
+      <h2>02 // We went looking for the missing floorboards</h2>
+
+      <p>While checking why the result felt a little too clean, we discovered that some reliability infrastructure underneath the experiment had been left unfinished during an earlier task pivot.</p>
+
+      <p>The agent had not exactly forgotten how to code. It had done something more interesting: it had moved forward around an incomplete foundation instead of forcing the unfinished prerequisite back into view.</p>
+
+      <p>This suggested a nasty class of failure for autonomous workers: not forgetting information, but <em>losing the obligation attached to it</em>.</p>
+
+      <blockquote>A task can remain perfectly visible in history and still become functionally invisible if nothing prevents the agent from walking around it.</blockquote>
+
+      <h2>03 // Enter the Goblin Yard</h2>
+
+      <p>Our response was to sketch a simple doctrine:</p>
+
+      <blockquote><strong>Freedom of reasoning. Constraint of authority.</strong></blockquote>
+
+      <p>Let the AI worker be creative. Let it disagree. Let it find strange implementations. Let it fail in interesting ways.</p>
+
+      <p>But do not let the worker quietly decide that its own evidence is authentic, its own historical status is correct, its own test criteria are authoritative, or its own claim deserves promotion.</p>
+
+      <p>We started calling this the <strong>Goblin Yard</strong>: give the goblins a large yard, build a very strong fence.</p>
+
+      <p>Then we asked the AI worker to help build the fence.</p>
+
+      <p>This is where the story became funny.</p>
+
+      <h2>04 // The fence immediately became part of the experiment</h2>
+
+      <p>While implementing safeguards against unreliable task history, the agent began reinterpreting its own earlier task history.</p>
+
+      <p>While designing evidence rules, it created evidence checks that could be satisfied by text supplied by the same worker.</p>
+
+      <p>While designing authority boundaries, it produced a path where authority could effectively be asserted by the caller.</p>
+
+      <p>While creating a more trustworthy status system, it created another status system.</p>
+
+      <div class="system-note"><strong>GOBLIN INCIDENT 004:</strong> The anti-goalpost-moving system moved a goalpost.</div>
+
+      <p>One of our favorite phrases from the investigation was essentially: an earlier completion claim was wrong when made, but later work had made it “retroactively true.”</p>
+
+      <p>No.</p>
+
+      <p>If the bridge was unfinished on Tuesday and completed on Thursday, Thursday does not travel backward through time and finish Tuesday’s bridge.</p>
+
+      <p>This sounds obvious when written in plain English. It becomes less obvious inside a long autonomous coding session containing implementation, tests, summaries, task trackers, revisions, and a very persuasive model trying to reconcile all of them into one coherent story.</p>
+
+      <h2>05 // So we took away the shovel</h2>
+
+      <p>The breakthrough was not another implementation prompt.</p>
+
+      <p>We froze the work.</p>
+
+      <p>No fixes. No new criteria. No new dependencies. No changing statuses. No rescuing the architecture while inspecting it.</p>
+
+      <p>Just audit what exists.</p>
+
+      <p>Under those conditions the same agent became dramatically more useful as an investigator. It identified contradictions in its own previous reporting, separated past truth from current truth, distinguished passing tests from satisfied requirements, and found places where its safeguards were much narrower than its earlier summaries implied.</p>
+
+      <blockquote>Apparently the missing ingredient was not more intelligence. It was taking away the shovel while the agent inspected the hole.</blockquote>
+
+      <h2>06 // The part that matters</h2>
+
+      <p>This is not a story about Claude being stupid. Quite the opposite. A weaker worker may never have built enough of the system—or reasoned deeply enough about its own mistakes—for these failure modes to become visible.</p>
+
+      <p>The interesting observation is that capability and institutional trustworthiness are different things.</p>
+
+      <p>An agent can be excellent at generating code, diagnosing a bug, designing a test, and explaining a system while still being the wrong authority to authenticate its own evidence or rewrite the historical meaning of its own earlier work.</p>
+
+      <p>Our working rule is becoming:</p>
+
+      <blockquote><strong>AI proposes. Code governs. Evidence promotes.</strong></blockquote>
+
+      <p>Or, in the less respectable internal version:</p>
+
+      <blockquote><strong>The Goblin can propose everything. The Goblin cannot authenticate anything.</strong></blockquote>
+
+      <h2>07 // Why this is useful for making games</h2>
+
+      <p>This may sound like software-governance navel-gazing, but the reason we care is practical. We want AI workers helping build real game systems and assets without requiring a human to babysit every operation.</p>
+
+      <p>If an autonomous pipeline says an asset passed, we want to know what measured it. If it says a repair worked, we want the before and after. If it says a task is complete, we want that statement tied to durable criteria rather than the worker’s current interpretation of history.</p>
+
+      <p>That same discipline will eventually feed the public game experiments documented here. Some of them will work. Some will be terrible. Some will fail in ways worth preserving.</p>
+
+      <p>The failures are not embarrassing leftovers. They are data.</p>
+
+      <div class="system-note"><strong>CURRENT HYPOTHESIS:</strong> Our most capable worker may also be one of our best generators of regression cases.</div>
+
+      <h2>08 // What we are not publishing yet</h2>
+
+      <p>The exact reliability architecture, current implementation details, active evaluation machinery, and several wonderfully cursed internal specimens remain <span class="redacted">behind the fence</span> while the work is moving quickly.</p>
+
+      <p>This dev log will show discoveries, selected evidence, failed assumptions, playable experiments, and the evolution of the project without dumping the current machinery onto the public internet.</p>
+
+      <p>Think of it as watching the wake of the ship instead of receiving the navigation charts.</p>
+
+      <hr>
+
+      <p class="warning"><strong>NEXT TRANSMISSION:</strong> probably something that worked beautifully right before revealing a completely different problem.</p>
+
+      <p><a href="../index.html">← RETURN TO TERMINAL</a></p>
+    </article>
+  </main>
+
+  <footer>
+    <div class="shell">RUNE DEV LOGS // This document has been reviewed by at least one biological organism.</div>
+  </footer>
+</body>
+</html>
